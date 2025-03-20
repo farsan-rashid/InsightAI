@@ -38,3 +38,7 @@ USING
     model = 'ollama_model',
     skills = ['text2sql_skill'];
 
+SELECT question, answer
+FROM agent_ollama
+WHERE question = 'What is the average of sqft in demo_data.home_rentals table?';
+
